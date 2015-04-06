@@ -79,9 +79,9 @@ public class Main extends JavaPlugin {
 		getCommand("setmap").setExecutor(new MapCommand());
 		
 		Map = FileManager.location.getString("MapName");
-		((CraftServer)Bukkit.getServer()).getServer().setMotd("§aWaiting:§6" + Map);
+		((CraftServer)Bukkit.getServer()).getServer().setMotd("Â§aWaiting:Â§6" + Map);
 		
-		sql = new MySQL("109.230.252.108", "MinecraftServer", "MinecraftServer", "eBNy7nR8mC3f2vw2Rm69UK");
+		sql = new MySQL("109.230.252.108", "MinecraftServer", "MinecraftServer", "***************");
 		try {
 			sql.openConnection();
 			sql.queryUpdate("CREATE TABLE IF NOT EXISTS QuakeCraft(Player VARCHAR(50), Kills INT, Deaths INT, Rounds INT, Wins INT, Points INT, HighestKillstreak INT, PlayerInfo VARCHAR(1000))");
